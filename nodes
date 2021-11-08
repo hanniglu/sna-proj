@@ -42,6 +42,6 @@ id,name,vorname,sex,year,region,type,team,statements,protest,erfurter,stuttgarte
 41,Schneller,Milena,2,2007,Reutlingen-Tübingen,2,3,2,2,2,2
 42,Malek,Fabienne,2,2007,Ortenau,2,3,2,2,2,2
 43,Schultes,Simon,1,1996,Tübingen,2,3,2,2,2,2
-44,Braun,Mike,1,99,2007,2,3,2,1,2,2
+44,Braun,Mike,1,2007,99,2,3,2,1,2,2
 45,Lind,Adrian,1,2002,Pforzheim,2,3,1,2,2,2
 46,Kimmig,Aaron,1,1989,Freiburg,2,3,1,2,2,2
