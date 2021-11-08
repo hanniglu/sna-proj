@@ -8,135 +8,271 @@ output:
     toc: yes
     toc_depth: 4
     number_sections: yes
-  pdf_document:
+  word_document:
     toc: yes
     toc_depth: '4'
-  word_document:
+  pdf_document:
     toc: yes
     toc_depth: '4'
 subtitle: Das Netzwerk der Afd BaWü
 editor_options: 
   markdown: 
     wrap: 72
+bibliography: references.bib
+fig_width: 14
+fig_height: 10
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Forschungsbericht
+# Einleitung
 
-## Einleitung
+In diesem Netzwerk werden die Bundestagsabgeordneten der AfD, die
+Abgeordneten der Landtagsfraktion 2021 Baden-Württemberg der AfD und den
+Vorstand der Jungen Alternative Baden-Württemberg auf ihre Beziehungen
+zu rechten Organisationen untersucht. Hierbei interessierte uns
+besonders, ob sich Cluster um bestimmte Organisationen bilden. Für das
+Netzwerk recherchierten wir die Akteure mit unseren ausgewählten
+Organisationen in Verbindung stehen. Zusätzlich vermerkten wir in den
+Nodes ob der jeweilige Akteur:in schon einmal ein öffentliches rechtes
+Statement abgab, ob dieser Akteur an einer rechten Demo teilnahm und ob
+er/sie ein:e Unterzeichner:in der Erfurter Resolution oder dem
+Stuttgarter Aufruf ist.
 
-Wir untersuchten Kandidaten:innen von der Landtagsliste 2021 für
-Baden-Württemberg der AfD, die Abgeordneten der Landtagsfraktion 2021
-Baden-Württemberg der AfD und den Vorstand der Jungen Alternative
-Baden-Württemberg auf ihre Beziehungen zu rechten Organisationen.
-Hierbei interessierte uns besonders, ob sich Cluster um bestimmte
-Organisationen bilden. Für das Netzwerk recherchierten wir die Akteure
-mit unseren ausgewählten Organisationen in Verbindung stehen. Zusätzlich
-vermerkten wir in den Nodes ob der jeweilige Akteur\*in schon einmal ein
-öffentliches rechtes Statement abgab, ob dieser Akteur an einer rechten
-Demo teilnahm und ob er/sie ein:e Unterzeichner:in der Erfurter
-Resolution oder dem Stuttgarter Aufruf ist.
+## Forschungsfrage
 
-### Forschungsfrage
+In dem Netzwerk wird sich hauptsächlich mit der Frage „Wie stark sind
+die baden-württembergischen AfDler:innen mit rechtsextremen
+Organisationen vernetzt?". Zusätzlich dazu kommt auch auf die Folgefrage
+„Gibt es dabei besonders wichtige Akteure?" auf.
 
-In unserem Netzwerk beschäftigen wir uns hauptsächlich mit der Frage „
-Wie stark sind die baden-württembergischen AfDler:innen mit
-rechtsextremen Organisationen vernetzt?". Zusätzlich dazu gehen wir auch
-auf die Folgefrage „Gibt es dabei besonders wichtige Akteure?" ein.
+## Forschungsdesign
 
-### Arbeitshypothesen
-
-Für unser Forschungsprojekt gehen wir von folgenden Arbeitshypothesen
-aus.
-
-1.  Soziale Kategorisierung: Das Netzwerk teilt sich in Cliquen auf.
-
-2.  Aktivitäts-Foki: Der Ort des sozialen Austausches wäre in unserem
-    Fall die jeweilige rechtsextreme Organisation oder Demonstration.
-
-3.  Preferential Attachment: Hier gehen wir davon aus, dass bestimmt
-    Organisationen eine größere Popularität haben und dementsprechend
-    von Akteuren lieber als Beziehungspartner gewählt werden.
-
-### Forschungsdesign
-
-Unser Forschungsdesign lehnt sich an das Rechercheprojekt der Taz zum
+Das Forschungsdesign lehnt sich an das Rechercheprojekt der Taz zum
 rechten Netzwerk der AfD und die Recherchen der Zeit Online zum
 rechtsextremen Netzwerk der Beschäftigten der AfD Abgeordneten im
-Bundestag an. (Rechtsextreme Parteien in Europe?)
+Bundestag an.
 
-### Literaturübersicht
+## Arbeitshypothesen
 
-### Akteure
+Für das Forschungsprojekt wird von den folgenden Arbeitshypothesen
+ausgegangen. Als erstes wäre der Aktivitäts-Foki. Dies ist ein Ort des
+sozialen Austausches an welchem es zu sozialen Verbindungen kommt. Dort
+entstehen Beziehungen zwischen Personen mit einem ähnlichen Interesse,
+dabei rücken bestimmt Interessen in den Vordergrund. Dies bedeutet, dass
+Personen, welche zu einer Organisation Verbindungen haben, Verbindungen
+zu ähnlichen Organisationen haben. Die andere Arbeitshypothese ist das
+Preferential Attachment, hierbei wird davon ausgegangen, dass beliebte
+Akteure bei der Bildung von Beziehungen bevorzugt werden. In diesem
+Netzwerk führt dies dazu, dass die Cluster um die Organisationen in
+ihrer größe variieren, da manche Organisationen beliebter sind als
+andere.
 
-#### Warum haben wir welche Akteure ausgewählt?
+## Literaturübersicht
+
+## Akteure
+
+### Welche Akteure gibt es?
 
 Unsere Personen sind die Kandidaten der Landtagsliste Baden-Württemberg
 2021 der AfD, die Landtagsabgeordneten des 17.Landtag Baden-Württemberg
-der AfD und der Vorstand der Jungen Alternative Baden-Württemberg.
-
-Bei den Organisationen haben wir uns auf den Flügel, Christen in der
-AfD, Querdenken, Identitäre Bewegung und Demo für alle festgelegt. Dazu
+der AfD und der Vorstand der Jungen Alternative Baden-Württemberg. Bei
+den Organisationen haben wir uns auf den Flügel, Christen in der AfD,
+Querdenken, Identitäre Bewegung und Demo für alle festgelegt. Dazu
 kommen noch die Erfurter Resolution und der Stuttgarter Aufruf, welche
 wir ebenfalls als Akteure in unserem Netzwerk festgelegt haben, und auch
 die AfD ist ein Akteur in unserem Netzwerk.
 
-#### Warum haben wir welche Akteure gewählt?
+### Warum haben wir unsere Akteure gewählt?
 
 Wir haben uns für die Kandidaten der Landtagsliste Baden-Württemberg und
 den Abgeordneten des 17. Landtags Baden-Württemberg der AfD entschieden,
 da wir unseren Fokus unseres Forschungsprojekt auf das Netzwerk in
 Baden-Württemberg legen. Zusätzlich dazu repräsentieren diese Akteure
-bis zu einem bestimmten Grad die AfD und dadurch auch deren Wähler.
-
-Den Vorstand der Jungen Alternative Baden-Württemberg haben wir mit in
-unser Forschungsprojekt mit aufgenommen, da sie die Jugendorganisation
-der AfD ist.
-
-Eine unserer ersten Organisationen war Christen in der AfD, da ... ?
-
-Über Christen in der AfD wurden wir auf die Demo für alle aufmerksam und
+bis zu einem bestimmten Grad die AfD und dadurch auch deren Wähler. Den
+Vorstand der Jungen Alternative Baden-Württemberg haben wir mit in unser
+Forschungsprojekt mit aufgenommen, da die Junge Alternative die
+Jugendorganisation der AfD ist. Die Christen in der AfD waren die erste
+Organisation, mit der wir den Versuch unseres Netzwerkes begannen. Über
+Christen in der AfD wurden wir auf die Demo für alle aufmerksam und
 entschieden uns dazu die Verbindungen unserer Akteure zu Demo für alle
-zu untersuchen.
+zu untersuchen. Wir haben uns dazu entschieden Querdenken als einen
+Akteur in unser Netzwerk mit aufzunehmen, da der AfD immer wieder
+Mitschuld an der Radikalisierung der Querdenker gegeben wird. Während
+unserer Recherchen trafen wir immer wieder auf die Identitäre Bewegung,
+weshalb wir uns dazu entschieden diese auch als Akteur in unser Netzwerk
+aufzunehmen. Da die Erfurter Resolution als Gründungsdokument des
+Flügels gilt, haben wir uns entschieden zu recherchieren ob unsere
+Akteure Unterzeichner dieses Dokumentes sind. Der Stuttgarter Aufruf
+steht für einen steht für eine radikaleren Kurs der AfD in
+Baden-Württemberg, weshalb wir uns dafür entschieden haben ihn in unser
+Netzwerk aufzunehmen.
 
-Wir haben uns dazu entschieden Querdenken als einen Akteur in unser
-Netzwerk mit aufzunehmen, da der AfD immer wieder Mitschuld an der
-Radikalisierung der Querdenker gegeben wird.
+# Hauptteil
 
-Während unserer Recherchen trafen wir immer wieder auf die Identitäre
-Bewegung, weshalb wir uns dazu entschieden diese auch als Akteur in
-unser Netzwerk aufzunehmen.
+## Datenerhebung
 
-Da die Erfurter Resolution als Gründungsdokument des Flügels gilt, haben
-wir uns entschieden zu recherchieren ob unsere Akteure Unterzeichner
-dieses Dokumentes sind.
+### Datenzugang
 
-Der Stuttgarter Aufruf steht für einen steht für eine radikaleren Kurs
-der AfD in Baden-Württemberg, weshalb wir uns dafür entschieden haben
-ihn in unser Netzwerk aufzunehmen.
+Der erste Datenzugang erfolgte über das Antifaschistische
+Dokumentations- und Informationszentrum (adiz, o. J.). Da ADIZ weder
+kontrolliert wird, noch eine öffentliche Stelle ist, kann man nicht
+davon ausgehen, dass die dortigen Angaben über Politiker*innen
+ausnahmslos korrekt sind. Aus diesem Grund wurden alle dort gefundenen
+Informationen überprüft. Entweder mit Daten der Webseiten von AfD, der
+Jungen Alternative und deren Kandidat*innen oder über weitere Recherche.
+Für weitere Informationen zu Biographie, Aussagen und Verbindungen
+wurden die Abgeordnetenprofile bei Bundestag und Landtag, die
+Social-Media Profile der Politiker\*innen, sowie Zeitungs- und andere
+Online-Artikel genutzt.
 
-## Hauptteil
+Die konkreten Quellen sind unter "Punkt 4 Anlagen" zu finden.
 
-### Datenerhebung
+### Datenbereinigung
 
-#### Datenzugang
+Nach der Erkenntnis, dass die Vereinigung „Christen in der AfD" (kurz:
+ChrAfD) keine relevanten Verbindungen zu den baden-württembergischen
+Politiker*innen vorzuweisen hat, wurden diese wieder aus dem Datensatz
+entfernt. Wie bereits erwähnt, musste der Großteil der Informationen und
+Quellen nochmal überprüft werden. Dies wurde durch weitere
+Online-Recherche gewährleistet. Konnten Informationen nicht bestätigt
+werden, wurden auch diese aus dem Datensatz entfernt. In die Edge- und
+Nodelist wurden die Kandidat*innen und Daten vorerst von jeder/jedem
+selbstständig eingetragen und mit Quellen hinterlegt. In einem zweiten
+Durchlauf wurden erneut alle Daten gesammelt mit den Quellen
+abgeglichen. Anschließend wurden die Datensätze auf Unstimmigkeiten in
+der Formatierung, Lücken und falsche Codierungen überprüft und
+bereinigt.
 
-#### Codebuch
+### Codebuch
 
-### Analyse und Interpretation der Daten
+Das Netzwerk ist ein *ungerichtetes two-mode Netzwerk*. Dabei
+untersuchen wir die als rechtsextremistisch eingestuften Vereinigungen
+Flügel, Querdenken, sowie die Identitäre Bewegung und ihre Verbindungen
+zur Partei Alternative für Deutschland (AfD). Außerdem werden Teilnahmen
+der Politiker\*innen an demokratiefeindlichen Demonstrationen, Protesten
+und Aufrufen untersucht.
+
+**EDGE-Attribute**
+
+**id**
+
+*eindeutige Kodierung des Knoten;*
+
+jede ID entspricht einem Akteur
+
+**relation**
+
+*Beziehungsart zwischen den Akteuren:*
+
+1= Mitglied
+
+2= Anhänger (meist bei aufgelösten Vereinigungen wie dem Flügel)
+
+3= Sympathisant (Akteur äußert sich positiv über Vereinigung)
+
+**years**
+
+*Beginn der Beziehung*
+
+**NODE-Attribute**
+
+**id**
+
+*Identische ID wie aus der Edgelist zur Identifikation der Knoten.*
+
+**vorname**
+
+*Vorname des Akteurs (bei realer Person)*
+
+**name**
+
+*Nachname oder Name der Vereinigung*
+
+**type**
+
+*Art des Akteurs*
+
+1= Vereinigung
+
+2= Privatperson
+
+**team**
+
+*Partei-/Institutions-Zugehörigkeit*
+
+1 = Landtag
+
+2 = Bundestag
+
+3 = Junge Alternative
+
+**sex**
+
+1= männlich
+
+2= weiblich
+
+3= divers
+
+**year**
+
+*Geburts-/Gründungsjahr*
+
+**statement**
+
+*Rechte Äußerungen in sozialen Medien oder bei Reden => Äußerungen, die
+nationalsozialistische/ fremdenfeindliche/antimuslimische/
+antifeministische/ queer-feindliche/demokratiefeindliche Inhalte,
+Verschwörungsideologien, Drittes-Reich-und Shoa-Verharmlosungen oder
+sonstigen Hass und Hetze gegen andere Bevölkerungsgruppen oder
+Einzelpersonen beinhalten.*
+
+1= ja
+
+2= nein
+
+**protest**
+
+*Teilnahme an als rechts eingestuften Demonstrationen => Querdenken,
+Demo für Alle, Kandel für alle, Aufmärsche der IB und JA, sowie des
+Flügels*
+
+1=ja
+
+2=nein
+
+**erfurter**
+
+*Unterzeichner\*innen der Erfurter Resolution*
+
+1=ja
+
+2=nein
+
+**stuttgarter**
+
+*Unterzeichner\*innen des Stuttgarter Aufrufs*
+
+1=ja
+
+2=nein
+
+## Analyse und Interpretation der Daten
 
 Die Auswertung und Analyse der Daten erfolgte hauptsächlich in RStudio.
 Wir verwenden die Bibliotheken tidyverse, igraph, knitr und visNetwork.
 Das Netzwerk besteht insgesamt aus 46 Knoten und 87 Kanten, die
 ausschließlich zwischen Personen und Organisationen liegen. Daten zu
 Beziehungen zwischen den Personen zu erheben hätte die Forschung
-wesentlich verkompliziert. Deshalb wurden nur die Beziehungen zwischen jeweils Personen und Organisationen erfasst.  Da die Organisation Christen in der AfD keine Verbindungen hat, wird sie aus dem Netzwerk entfernt. Nach dieser Bereinigung besitzt das Netzwerk nur noch 45 Knoten. Das Netzwerk
-ist ungerichtet, aber gewichtet, da bei den meisten Beziehungen eine
-Abstufung erfolgen konnte.
-
+wesentlich verkompliziert. Deshalb wurden nur die Beziehungen zwischen
+jeweils Personen und Organisationen erfasst. Da die Organisation
+"Christen in der AfD" keine Verbindungen hat, wird sie aus dem Netzwerk
+entfernt. Nach dieser Bereinigung besitzt das Netzwerk nur noch 45
+Knoten. Das Netzwerk ist ungerichtet, aber gewichtet, da bei den meisten
+Beziehungen eine Abstufung erfolgen kann.
 
 ```{r Bibliotheken laden, message=FALSE, warning=TRUE, include=FALSE, paged.print=FALSE}
 library(tidyverse)
@@ -147,7 +283,8 @@ library(visNetwork)
 
 Nachdem die Daten in Google Spreadsheets erfasst und als CSV-Datei
 exportiert wurden, konnten diese problemlos auf Github hochgeladen
-werden. Von dort aus können die Daten direkt in RStudio importiert und dort analysiert und visualisiert werden.
+werden. Von dort aus können die Daten direkt in RStudio importiert und
+dort analysiert und visualisiert werden.
 
 ```{r Datensatz laden und igraph erstellen, message=FALSE, warning=TRUE, include=FALSE, paged.print=FALSE}
 # Github
@@ -160,16 +297,20 @@ g_compl <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
 g <- delete.vertices(simplify(g_compl), degree(g_compl)==0)
 ```
 
-### Gesamtnetzwerk
+## Gesamtnetzwerk
 
 Zunächst einmal verschaffen wir uns einen Überblick über das
-Gesamtnetzwerk. Zur besseren Übersichtlichkeit werden die Nodes anhand ihrer Degree-Werte skaliert.
+Gesamtnetzwerk. Zur besseren Übersichtlichkeit werden die Nodes anhand
+ihrer Degree-Werte skaliert. Nach der Bereinigung im vorigen Abschnitt
+besitzt das Netzwerk eine einzige Komponente und besteht dementsprechend
+nur aus einem zusammenhängenden Hauptnetzwerk.
 
 ```{r Untersuchung Gesamtnetzwerk, message=FALSE, warning=TRUE, include=FALSE, paged.print=FALSE}
 gind <- degree(g, mode = "in")
 V(g)[V(g)$type == "1"]$color <- "orange" 
 V(g)[V(g)$type == "2"]$color <- "lightblue"
 delete.vertices(simplify(g), degree(g)==0)
+is_connected(g)
 ```
 
 ```{r Übersicht Gesamtnetzwerk, echo=FALSE, message=FALSE, warning=TRUE, paged.print=FALSE, fig.height=10, fig.width=14}
@@ -186,10 +327,10 @@ plot(g,
      vertex.size=gind*0.8+5)
 ```
 
-
 **Die wichtigsten Netzwerkwerte**
 
-Einige grundsätzliche Untersuchungen geben erste Aufschlüsse über das Netzwerk.
+Einige grundsätzliche Untersuchungen geben erste Aufschlüsse über das
+Netzwerk.
 
 ```{r Wichtige Netzwerkwerte, message=FALSE, warning=FALSE, include=FALSE, paged.print=TRUE}
 ## Vereinfacht?
@@ -205,20 +346,144 @@ diameter(g)
 farthest_vertices(g)
 ```
 
-Das Netzwerk ist bereits vereinfacht. Es gibt lediglich eine Komponente im Netzwerk.Die Dichte im Gesamtnetzwerk liegt bei 8,78%. Der längste Pfad im Netzwerk führt von der Organisation Querdenken zu Hr. Lobstedt und ist 5 Schritte lang.
+Das Netzwerk ist bereits vereinfacht. Es gibt lediglich eine Komponente
+im Netzwerk.Die Dichte im Gesamtnetzwerk liegt bei 8,78%. Der längste
+Pfad im Netzwerk führt von der Organisation Querdenken zu Hr. Lobstedt
+und ist 5 Schritte lang.
 
-### Teilnetzwerke
+## Teilnetzwerke
 
-#### Ego-Netzwerke ausgewählter Organisationen
+Innerhalb des Gesamtnetzwerkes finden sich einige interessante
+Teilnetzwerke, die teilweise logischerweise aufgrund der Datenerhebung
+entstanden sind (Vorstand der Jungen Alternative, Mitglieder des
+Land-/Bundestags), teilweise entstehen jedoch auch Teilnetzwerke, die
+nicht direkt zu erwarten waren. Ein guter Ausgangspunkt hierfür ist die
+cluster_walktrap Funktion.
 
-Im nächsten Schritt werden die Organisationen untersucht, die die
-meisten Verbindungen aufweisen. Das sind die AfD, die Junge Alternative,
-der Flügel und die Identitäre Bewegung.
+### Cluster
 
-Die einzelnen Netzwerke unterscheiden sich gerade in der Dichte und der
-Zahl der Mitglieder erheblich. Ob die steigende Dichte mit der
-steigenden politischen Extremität einhergeht, lässt sich nicht mit
-100%iger Wahrscheinlichkeit belegen, ist jedoch vorstellbar.
+```{r Cluster, echo=FALSE, fig.height=10, fig.width=14, message=FALSE, warning=FALSE, paged.print=TRUE}
+cluster <- cluster_walktrap(g, weights = E(g)$relation)
+
+plot(cluster, g,
+     asp=0,
+     layout=layout_with_kk,
+     vertex.label=(g)$name,
+     main="Cluster innerhalb der untersuchten Gruppe",
+     sub="Anzahl der Cluster = 5")
+
+
+```
+
+Die Analyse ergibt fünf Cluster im gesamten Netzwerk. Der kleinste
+Cluster besteht nur aus einem Knoten und kann dementsprechend bei der
+weiteren Untersuchung außen vor gelassen werden. Interessant ist
+hierbei, dass man im Netzwerk die x-Achse von links nach rechts mit der
+Gesinnung der entsprechenden Organisationen in Verbindung bringen kann.
+Die Identitäre Bewegung steht im teils engen Austausch mit der Jungen
+Alternative und steht dieser dementsprechend nahe: *"Die JA fällt immer
+wieder durch direkt oder indirekt inhaltliche wie personelle
+Verbindungen zu Kreise der extremen Rechte auf"* [@diealte2016]
+(Herkenhoff, 2019, Seite 211). Zur Mitte hin bilden die Erfurter
+Resolution, sowie der sogenannte Flügel die Brücke zur Mutterpartei AfD
+und den weniger Vernetzten Abgeordneten.
+
+### Teilnetzwerke der der drei untersuchten Gruppen
+
+In der Datenerhebung wurden konkret drei Gruppen untersucht: Die
+aktuellen Abgeordneten der Landtagsfraktion Baden-Württemberg der AfD,
+die Bundestagsabgeordneten der AfD Baden-Württemberg und zu guter letzt
+der aktuelle Vorstand der Jungen Alternative Baden Württemberg. So wurde
+ein Querschnitt und eine repräsentative Stichprobe der
+Baden-Württembergischen AfD untersucht. In diesem Abschnitt wird das
+Gesamtnetzwerk nun noch einmal in diese drei Teilgruppen zerlegt, um die
+entsprechenden Netzwerkdynamiken vergleichen zu können.
+
+```{r Teilgruppen der drei untersuchten Gruppen, message=FALSE, warning=FALSE, include=FALSE}
+# Teilnetzwerk nur mit den Landtagsabgeordneten und Organisationen
+g_lt1 <- delete_vertices(g, V(g)[team == 2])
+g_lt2 <- delete_vertices(g_lt1, V(g_lt1)[team == 3])
+degree(g_lt2)
+g_lt3 <- delete_vertices(g_lt2, degree(g_lt2)==0) # Knoten ohne Verbindungen löschen
+g_lt <- cluster_walktrap(g_lt3, weights = E(g)$relation)
+# Teilnetzwerk nur mit den Bundestagsabgeordneten und Organisationen
+g_bt1 <- delete_vertices(g, V(g)[team == 1])
+g_bt2 <- delete_vertices(g_bt1, V(g_bt1)[team == 3])
+degree(g_bt2)
+g_bt3 <- delete_vertices(g_bt2, degree(g_bt2)==0) 
+g_bt <- cluster_walktrap(g_bt3, weights = E(g)$relation)
+# Teilnetzwerk nur mit den Vertretern der Jungen Alternative und den Organisationen
+g_jav1 <- delete_vertices(g, V(g)[team == 1])
+g_jav2 <- delete_vertices(g_jav1, V(g_jav1)[team == 2])
+degree(g_jav2)
+g_jav3 <- delete_vertices(g_jav2, degree(g_jav2)==0) 
+g_jav <- cluster_walktrap(g_jav3, weights = E(g)$relation)
+
+```
+
+```{r Vergleich untersuchter Gruppen, echo=FALSE, message=FALSE, warning=FALSE}
+
+par(mfrow=c(1,1), mar=c(3,3,3,3))
+
+plot(g_lt, g_lt3,
+     asp=0,
+     layout=layout_with_kk,
+     edge.curved=.2,
+     main="Landtagsfraktion BW",
+     sub="Anzahl der Knoten = 24
+    Dichte = 13,77%")
+
+plot(g_bt, g_bt3,
+     asp=0,
+     layout=layout_with_kk,
+     edge.curved=.2,
+     #vertex.size=8,
+     main="Bundestagstagsfraktion BW",
+     sub="Anzahl der Knoten = 17
+    Dichte = 16,91%")
+
+plot(g_jav, g_jav3,
+     asp=0,
+     layout=layout_with_kk,
+     edge.curved=.2,
+     main="Junge Alternative BW",
+     sub="Anzahl der Knoten = 15
+    Dichte = 24,76%")
+
+```
+
+```{r Analyse Untersuchungsgruppen, message=FALSE, warning=FALSE, include=FALSE}
+# Analyse Landtagsabgeordnete
+gorder(g_lt3)
+edge_density(g_lt3, loops=FALSE)
+
+# Analyse Bundestagsabgeordnete
+gorder(g_bt3)
+edge_density(g_bt3, loops=FALSE)
+
+# Analyse Junge Alternative
+gorder(g_jav3)
+edge_density(g_jav3, loops=FALSE)
+
+```
+
+Die Untersuchung der jeweiligen Teilnetzwerke zeigt deutlich: Vor allem
+die Junge Alternative ist sehr gut vernetzt. Vor allem untereinander,
+aber auch nach außen, wie beispielsweise zu Burschenschaften (Tilmann,
+2018).
+Interessant ist ebenfalls die Clusterbildung innerhalb der Teilnetzwerke, die bestätigt, dass es selbst innerhalb der jeweiligen Gruppierungen mehrere Strömungen gibt. Deutlich erkennt man dies zum Beispiel an den Clustern innerhalb der untersuchten Landtagsfraktion. Während einige Knoten nur über eine Kante zum Netzwerk verbunden sind, gibt es andere, die mit mehreren Knoten verbunden sind, die zudem auch politisch extremer nach rechts außen schwanken. 
+In der Jungen Alternative lassen sich zwei wichtige Cluster erkennen: Zum einen der Cluster der weniger vernetzten Vorstandsmitglieder, die sich zwar zur Erfurter Resolution bekennen (JA Redaktion, 2015), ansonsten jedoch keine weiteren Verbindungen erkennen lassen. Zum anderen diejenigen, die auch politisch auffälliger nach rechts tendieren und mit Organisationen wie der Identitären Bewegung verbunden sind.
+
+### Ego-Netzwerke ausgewählter Organisationen
+
+Im nächsten Schritt werden Ego-Netzwerke untersucht, die die
+Beantwortung der Forschungsfrage ermöglichen sollen. Das sind die AfD,
+die Junge Alternative, der Flügel und die Identitäre Bewegung.
+
+Die einzelnen Netzwerke unterscheiden sich in der Dichte und der Zahl
+der Mitglieder erheblich. Ob die steigende Dichte mit der steigenden
+politischen Extremität einhergeht, lässt sich nicht mit 100%iger
+Wahrscheinlichkeit belegen, ist jedoch vorstellbar.
 
 *Alternative für Deutschland*
 
@@ -240,26 +505,37 @@ plot(afdego1,
      edge.curved=curve_multiple(g),
      main="Ego-Netzwerk AfD im 2. Grad",
      sub="Dichte = 10,15%
-     Knoten = 36 von 46")
+     Knoten = 36 von 45")
 
-plot(g,
+
+clafdego1 <- cluster_walktrap(afdego1, weights = E(g)$relation)
+
+plot(clafdego1, afdego1,
      asp=0,
-     edge.curved=.2,
-     vertex.size=degree(g,mode="all")+3,
-     vertex.frame.color=NA,
-     layout=layout_as_star(g, center = V(g)[18]),
-     edge.width=E(g)$relation,
-     edge.curved=curve_multiple(g),
-     main="Gesamtnetzwerk mit der AfD im Fokus", 
-     sub="Knotengröße nach Degree-Wert (deg+3 zur besseren Übersichtlichkeit)",
-     edge.width=E(g)$relation
-     )
+     layout=layout_with_kk,
+     vertex.label=(g)$name,
+     main="Cluster innerhalb der untersuchten Gruppe",
+     sub="Anzahl der Cluster = 4")
+```
 
+```{r Ego-Netzwerk AfD Analyse, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 gorder(afdego1)
 
 edge_density(afdego1, loops=FALSE)
 
+farthest_vertices(afdego1)
+
 ```
+
+Mit einer Dichte von 10,15% ist das Ego-Netzwerk der AfD im zweiten Grad
+nicht besonders stark vernetzt, zudem ist die längste Pfaddistanz mit
+einer Länge von 4 Schritten kürzer als im Gesamtnetzwerk, mit 36 Knoten
+jedoch das größte untersuchte Teilnetzwerk in diesem Abschnitt. Die
+Mitglieder scheinen sich zu einem großen Teil nicht (öffentlich) mit den
+recherchierten Organisationen zu vernetzen oder generell kein Interesse
+an organisierter Vernetzung zu haben. Interessant: Auch hier zeigt
+cluster_walltrap wieder vier Cluster an, die sich tatsächlich in
+ähnliche politische Einstellungen gruppieren.
 
 *Junge Alternative*
 
@@ -281,26 +557,35 @@ plot(jaego1,
      edge.curved=curve_multiple(g),
      main="Ego-Netzwerk JA im 2. Grad",
      sub="Dichte = 22,22%
-     Knoten = 18 von 46")
+     Knoten = 18 von 45")
 
-plot(g,
+
+cljaego1 <- cluster_walktrap(jaego1, weights = E(g)$relation)
+
+plot(cljaego1, jaego1,
      asp=0,
-     edge.curved=.2,
-     vertex.size=degree(g,mode="all")+3,
-     vertex.frame.color=NA,
-     layout=layout_as_star(g, center = V(g)[19]),
-     edge.width=E(g)$relation,
-     edge.curved=curve_multiple(g),
-     main="Gesamtnetzwerk mit der JA im Fokus", 
-     sub="Knotengröße nach Degree-Wert (deg+3 zur besseren Übersichtlichkeit)",
-     edge.width=E(g)$relation
-     )
+     layout=layout_with_kk,
+     vertex.label=(g)$name,
+     main="Cluster innerhalb der untersuchten Gruppe",
+     sub="Anzahl der Cluster = 4")
 
+```
+
+```{r Ego-Netzwerk JA Analyse, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 gorder(jaego1)
 
 edge_density(jaego1, loops=FALSE)
 
+farthest_vertices(jaego1)
+
 ```
+
+Das zweite Ego-Netzwerk in der Untersuchung ist das der Jungen
+Alternative. Es besteht aus lediglich 18 Knoten, ist jedoch mit einer
+Dichte von 22,22% enger verflochten, als das der Mutterpartei. An der
+längsten Pfaddistanz ändert sich im Vergleich zur Mutterpartei AfD
+nichts. Die vier Cluster zeigen: Trotz der Nähe zur Jungen Alternative
+gibt es auch hier unterschiedliche Annäherungen.
 
 *Der Flügel*
 
@@ -321,27 +606,42 @@ plot(fego1,
      vertex.label=(g)$name,
      edge.curved=curve_multiple(g),
      main="Ego-Netzwerk Fluegel im 2. Grad",
-     sub="Dichte = 22,63%
-     Knoten = 20 von 46")
+     sub="Dichte = 22,22%
+     Knoten = 19 von 45")
 
-plot(g,
+clfego1 <- cluster_walktrap(fego1, weights = E(g)$relation)
+
+plot(clfego1, fego1,
      asp=0,
-     edge.curved=.2,
-     vertex.size=degree(g,mode="all")+3,
-     vertex.frame.color=NA,
-     layout=layout_as_star(g, center = V(g)[20]),
-     edge.width=E(g)$relation,
-     edge.curved=curve_multiple(g),
-     main="Gesamtnetzwerk mit dem Fluegel im Fokus", 
-     sub="Knotengröße nach Degree-Wert (deg+3 zur besseren Übersichtlichkeit)",
-     edge.width=E(g)$relation
-     )
+     layout=layout_with_kk,
+     vertex.label=(fego1)$name,
+     main="Cluster innerhalb der untersuchten Gruppe",
+     sub="Anzahl der Cluster = 6")
 
+```
+
+```{r Ego-Netzwerk Fluegel Analyse, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 gorder(fego1)
 
 edge_density(fego1, loops=FALSE)
 
+farthest_vertices(fego1)
+
 ```
+
+Im Flügel ergeben sich in der Visualisierung interessante Muster:
+Deutlich weniger kompakt als erwartet verstreut sich das Ego-Netzwerk
+etwas. Bei näherer Betrachtung der Clusterbildung erkennt man eine
+gewisse Streuung. Der größte Cluster in der Mitte zeigt eine Gruppe
+Flügel-Unterstützer:innen die, trotz der Nähe zum Flügel-Initiiator
+Höcke, von ganz rechts außen doch nichts zu wissen wollen scheinen. Die
+Dichte des Teilnetzwerkes entspricht mit 22,22% dem Netzwerk der Jungen
+Alternative. Auch die längste Pfaddistanz ändert sich nicht mehr. Sie
+bleibt bei einer Länge von 4 Schritten, was jedoch bei der Art des
+Netzwerkes sehr wahrscheinlich ist, da sich die Edges nur von Personen
+zu Organisationen und dann wieder zu Personen erstrecken. Es ist jedoch
+interessant, dass es recht homogene Vernetzungsmuster und nicht einzelne
+Knoten und Kanten gibt, an denen sich längere Pfade ergeben.
 
 *Identitäre Bewegung*
 
@@ -363,20 +663,17 @@ plot(ibego1,
      edge.curved=curve_multiple(g),
      main="Ego-Netzwerk IB im 2. Grad",
      sub="Dichte = 30,76%
-     Knoten = 14 von 46")
+     Knoten = 14 von 45")
 
-plot(g,
+
+clibego1 <- cluster_walktrap(ibego1, weights = E(g)$relation)
+
+plot(clibego1, ibego1,
      asp=0,
-     edge.curved=.2,
-     vertex.size=degree(g,mode="all")+3,
-     vertex.frame.color=NA,
-     layout=layout_as_star(g, center = V(g)[22]),
-     edge.width=E(g)$relation,
-     edge.curved=curve_multiple(g),
-     main="Gesamtnetzwerk mit der Identitären Bewegung im Fokus", 
-     sub="Knotengröße nach Degree-Wert (deg+3 zur besseren Übersichtlichkeit)",
-     edge.width=E(g)$relation
-     )
+     layout=layout_with_kk,
+     vertex.label=(ibego1)$name,
+     main="Cluster innerhalb der untersuchten Gruppe",
+     sub="Anzahl der Cluster = 2")
 
 gorder(ibego1)
 
@@ -384,19 +681,31 @@ edge_density(ibego1, loops=FALSE)
 
 ```
 
-##### Nachweislich rechtsextreme Äußerungen
+```{r Ego-Netzwerk IB Analyse, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+gorder(ibego1)
 
-So lohnt sich zudem ein Blick auf diejenigen Personen, die sich
+edge_density(ibego1, loops=FALSE)
+
+farthest_vertices(ibego1)
+
+```
+
+Das kleinste und dichteste Ego-Netzwerk finden wir bei der Identitären
+Bewegung, hier teilt sich zudem das Netzwerk in lediglich zwei Cluster
+auf: Eines um die AfD-Abgeordnete Wolle und eines mit Vertretern der
+Jungen Alternative.
+
+### Nachweislich rechtsextreme Äußerungen
+
+Zudem lohnt sich ein Blick auf diejenigen Personen, die sich
 rassistisch, antisemitisch oder in sonstiger Weise rechtsextrem geäußert
 haben.
 
 ```{r Teilnetzwerk derer mit rechtsextremen Äußerungen, message=FALSE, warning=FALSE, paged.print=FALSE, fig.height=10, fig.width=14}
 
-par(mar=c(0,0,0,0)) 
+par(mar=c(0,0,2,1)) 
 
 statements <- delete_vertices(g, V(g)[statements == 2]) 
-
-V(statements)
 
 plot(statements,
      asp=0,
@@ -410,17 +719,62 @@ plot(statements,
      main="Teilnetzwerk rechtsextreme Äußerungen", # Hauptüberschrift
      sub="-") # Unterüberschrift
 
+gorder(statements)
+
+edge_density(statements, loops=FALSE)
+
 ```
 
-```{r Teilnetzwerk , message=FALSE, warning=FALSE, paged.print=FALSE}
+### Vergleich der Altersgruppen
+
+Vor allem die Vertreter:innen der Jungen Alternative senken den
+Altersschnitt der untersuchten Gruppe (Altersschnitt der untersuchten
+Personen: 49). In diesem Abschnitt wollen wir den Netzwerkaufbau, sowie
+die Dichte abhängig vom Alter untersuchen. Altersgruppe A sind alle
+unter 30 Jahren, Altersgruppe B alle Personen über 31 Jahre.
+
+```{r Teilnetzwerk Alter, message=FALSE, warning=FALSE, paged.print=FALSE, fig.height=10, fig.width=14}
+
+par(mar=c(0,0,2,1)) 
+
+u30 <- delete_vertices(g, V(g)[year < 1991]) 
+
+plot(u30,
+     asp=0,
+     vertex.size=7,
+     edge.arrow.size=.7, # Pfeilspitze auf .3
+     edge.color="grey70", # Kantenfarbe 70% Grau
+     layout=layout_with_kk, # Layout-Algorithmus Kamada-Kawai
+     vertex.frame.color= "grey70", # keine Ränder bei den Vertices anzeigen
+     vertex.label=(statements)$name, # Nachnamen als Labels anzeigen
+     edge.curved=curve_multiple(statements), # Kanten sollen sich nicht überlagern
+     main="Teilnetzwerk Menschen unter 30 Jahren", # Hauptüberschrift
+     sub="-") # Unterüberschrift
+
+gorder(statements)
+
+edge_density(statements, loops=FALSE)
+
+```
+
+Vor allem aufgrund der antifeministischen Haltung in vielen der
+untersuchten Organisationen, wird das Netzwerk abschliessend auf die
+Unterschiede zwischen den beiden Geschlechtern untersucht. Vor allem in
+der AfD gehören Frauen von Beginn an zu wichtigen Parteimitgliedern
+(Hentges, G., & Nottbohm, K. (2017). Die Verbindung von Antifeminismus
+und Europakritik. Positionen der Parteien „Alternative für Deutschland"
+und „Front National". In G. Hentges, K. Nottbohm, & H.-W. Platzer
+(Hrsg.), Europäische Identität in der Krise? Europäische
+Identitätsforschung und Rechtspopulismusforschung im Dialog (S.
+167--208). Springer Fachmedien.
+<https://doi.org/10.1007/978-3-658-14951-2_8>).
+
+```{r Teilnetzwerk , message=FALSE, warning=FALSE, paged.print=FALSE, fig.height=10, fig.width=14}
 par(mfrow=c(1,2.5), mar=c(0,0,2,1))
-vertex_attr(g)$sex
 
-male <- delete.vertices(g, E(g)["sex" == 2])
+male <- delete.vertices(g, V(g)[sex == 2])
 
-fem <- delete.vertices(g, E(g)["sex" == 1])
-
-vertex_attr(fem)$sex 
+fem <- delete.vertices(g, V(g)[sex == 1])
 
 plot(male,
      asp=0,
@@ -431,7 +785,8 @@ plot(male,
      vertex.label=(male)$name, # Nachnamen als Labels anzeigen
      edge.curved=curve_multiple(male), # Kanten sollen sich nicht überlagern
      main="Teilnetzwerk Männer", # Hauptüberschrift
-     sub="-") # Unterüberschrift
+     sub="32 Personen
+     Dichte = 9,1%") # Unterüberschrift
 
 plot(fem,
      asp=0,
@@ -442,69 +797,33 @@ plot(fem,
      vertex.label=(fem)$name, # Nachnamen als Labels anzeigen
      edge.curved=curve_multiple(fem), # Kanten sollen sich nicht überlagern
      main="Teilnetzwerk Frauen", # Hauptüberschrift
-     sub="-") # Unterüberschrift
+     sub="5 Personen
+     Dichte = 20,51%") # Unterüberschrift
+
+gorder(male)
+edge_density(male, loops=FALSE)
+
+gorder(fem)
+edge_density(fem, loops=FALSE)
 
 par(mfrow=c(1,1), mar=c(0,0,0,0))
 ```
 
-```{r Teilnetzwerk aller weiblichen Abgeordneten und Organisationen, message=FALSE, warning=FALSE, paged.print=FALSE}
+Im Gegensatz zu den männlichen untersuchten Personen sind die weiblichen
+Knoten extrem gut vernetzt. Beinahe zu allen untersuchten Organisationen
+gibt es eine Verbindung, trotz der deutlich niedrigeren Personenzahl.
 
-fem <- delete.vertices(g, E(g)["sex" == 1])
-list.vertex.attributes(g) 
-vertex_attr(g)$sex 
-plot(fem,
-     asp=0,
-     edge.arrow.size=.7, # Pfeilspitze auf .3
-     edge.color="grey70", # Kantenfarbe 70% Grau
-     layout=layout_with_kk, # Layout-Algorithmus Kamada-Kawai
-     vertex.frame.color=NA, # keine Ränder bei den Vertices anzeigen
-     vertex.label=(g)$name, # Nachnamen als Labels anzeigen
-     edge.curved=curve_multiple(g), # Kanten sollen sich nicht überlagern
-     main="Teilnetzwerk Frauen", # Hauptüberschrift
-     sub="-") # Unterüberschrift
+# Schluss
 
+## Zentrale Erkenntnisse
 
-# Zählt die Cliquen im Netzwerk
-clique_num(g)
+### Hypothesenüberprüfung
 
-# listet die Cliquen im Netzwerk auf
-lc <- largest_cliques(g)
-lc
+### Netzwerkanalytische Erkenntnisse
 
-# Umwandlung für Visualisierung
-V(g)$label <- V(g)$name
-s_lc <- subgraph(g, lc[[1]])
+### Politische/Gesellschaftliche Erkenntnisse
 
-plot(s_lc, 
-     layout=layout.fruchterman.reingold, 
-     vertex.color="gold", 
-     edge.arrow.size = 0.5, 
-     edge.color = "gray80",
-     main = "Größte Clique im CR/PR Netzwerk")
-
-```
-
-AfD als Standard Junge Alternative Identitäre Bewegung Flügel
-
-### Visualisierung
-
-#### Welche Ego-Netzwerke untersuchen wir?
-
-#### Welche Arten und Weisen der Darstellung sind interessant?
-
-#### Filterungen
-
-## Schluss
-
-### Zentrale Erkenntnisse (J)
-
-#### Hypothesenüberprüfung
-
-#### Netzwerkanalytische Erkenntnisse
-
-#### Politische/Gesellschaftliche Erkenntnisse
-
-### Limitation & Ausblick
+## Limitation & Ausblick
 
 Wenn mehrere Personen an einem Projekt arbeiten, muss die Arbeit
 verständlicherweise aufgeteilt werden, um ihrem Umfang gerecht zu
@@ -561,7 +880,7 @@ Einfluss auf die Partei haben. Je nachdem wie weit die Forschung gehen
 würde, müsste irgendwann der Verfassungsschutz übernehmen, dem das
 alleinige Recht zusteht, die Partei als mögliche Gefährdung einzustufen.
 
-### Teamreflexion
+## Teamreflexion
 
 In einem Team zu arbeiten ist nie einfach -- besonders wenn die Arbeit
 sich über einen so langen Zeitraum erstreckt wie diese soziale
@@ -626,23 +945,279 @@ was wir herausgefunden haben -- bitte nicht falsch verstehen -- aber
 nach dieser langen Zeit endlich zu einem Ende zu kommen ist wohl das
 beste Gefühl.
 
-## Anlagen
+# Anlagen
 
-### Literatur (T)
+## Literatur
 
-### Quellen (Le)
+Herkenhoff, A.-L. (2016). Rechter Nachwuchs für die AfD -- die Junge
+Alternative (JA). In A. Häusler (Hrsg.), Die Alternative für Deutschland
+(S. 201--217). Springer Fachmedien Wiesbaden.
+<https://doi.org/10.1007/978-3-658-10638-6_14>
 
-### Datensatz githhub
+Hentges, G., & Nottbohm, K. (2017). Die Verbindung von Antifeminismus
+und Europakritik. Positionen der Parteien „Alternative für Deutschland"
+und „Front National". In G. Hentges, K. Nottbohm, & H.-W. Platzer
+(Hrsg.), Europäische Identität in der Krise? Europäische
+Identitätsforschung und Rechtspopulismusforschung im Dialog (S.
+167--208). Springer Fachmedien.
+<https://doi.org/10.1007/978-3-658-14951-2_8>
 
-### Verzeichnisse
+## Quellen
 
-#### Abbildungen
+Im Weiteren folgt eine Auflistung der genutzten Datenzugänge, unterteilt
+in allgemeine und spezifische Informationen.
 
-#### Tabellen
+[**Allgemein:**]{.ul}
 
-#### Abkürzungen?
+*Belltower.News*. (o. J.). Belltower.News. Abgerufen 8. November 2021,
+von <https://www.belltower.news/>
 
-### Eidesstattliche Versicherung
+Billmann, L. (2015). *Unheilige Allianz*. Rosa Luxemburg Stiftung.
+<https://www.rosalux.de/publikation/id/3984/unheilige-allianz/>
+
+*ChrAfD*. (o. J.). Christen in der AfD. Abgerufen 8. November 2021, von
+<https://www.chrafd.de/index.php>
+
+*Christen in der AfD (\@ChrAfD) / Twitter*. (o. J.). \[Twitter\].
+Twitter. Abgerufen 8. November 2021, von <https://twitter.com/ChrAfD>
+
+*Demo für Alle*. (o. J.). Demo für Alle. Abgerufen 8. November 2021, von
+<https://demofueralle.de/>
+
+demofueralle. (2019, August 28). *Wahlprüfsteine zu den Landtagswahlen
+in Sachsen und Brandenburg*. Demo für Alle.
+<https://demofueralle.de/2019/08/28/wahlpruefsteine-zu-landtagswahlen-in-sachsen-und-brandenburg/>
+
+Elternaktion.com. (2017, März 24). *Elternaktion*.
+<https://elternaktion.com/bundeslaender/baden-wuerttemberg/>
+
+*Fuxenrot*. (o. J.). \[Blog\]. Fuxenrot. Abgerufen 8. November 2021, von
+<https://fuxenrot.noblogs.org/>
+
+Klatt, T. (2018, Mai 7). *Religion in der Politik---Die AfD und das
+Christentum*. Deutschlandfunk.
+<https://www.deutschlandfunk.de/religion-in-der-politik-die-afd-und-das-christentum.886.de.html?dram:article_id=417169>
+
+Kritisches Portrait der AfD-Kandidaten für die Landtagswahl 2021. (2021,
+Februar 18). *Mut gegen Rechts*.
+<https://www.mutgegenrechts.org/2021/02/18/kritisches-portrait-der-afd-kandidaten-fuer-die-landtagswahl-2021/>
+
+Meister, A., Biselli, A., & Reuter, M. (2019, Januar 28). Prüffall: Wir
+veröffentlichen das Verfassungsschutz-Gutachten zur AfD.
+*netzpolitik.org*.
+<https://netzpolitik.org/2019/wir-veroeffentlichen-das-verfassungsschutz-gutachten-zur-afd/>
+
+Redaktion. (2015, März 19). Landesvorstand stellt sich vollumfänglich
+hinter die „Erfurter Resolution" -- Junge Alternative Baden-Württemberg.
+*Blog der Jungen Alternative*.
+<http://ja-baden-wuerttemberg.de/2015/03/19/landesvorstand-stellt-sich-vollumfaenglich-hinter-die-erfurter-resolution/>
+
+*Stuttgarter Aufruf*. (2018, Oktober 28). \[Petition\].
+<https://www.stuttgarter-aufruf.de/>
+
+Tilman, S. (2018, November 27). Junge Alternative: Unrettbar
+kontaminiert. *Die Zeit*.
+<https://www.zeit.de/politik/deutschland/2018-11/junge-alternative-afd-jugend-identitaere-bewegung?utm_referrer=https%3A%2F%2Fwww.google.com%2F>
+
+tuebingenrechtsaussen. (2017, Oktober 20). Tübinger Identitäre
+umtriebig. *Tübingen Rechtsaußen*.
+<https://tuebingenrechtsaussen.wordpress.com/2017/10/20/tuebinger-identitaere-umtriebig/>
+
+[**Spezifisch:**]{.ul}
+
+**Balzer, Rainer**\
+[https://kraichgau.news/bretten/c-politik-wirtschaft/gut-besuchter-politischer-aschermittwoch-der-afd-karlsruhe-land_a15646\
+](https://kraichgau.news/bretten/c-politik-wirtschaft/gut-besuchter-politischer-aschermittwoch-der-afd-karlsruhe-land_a15646)<https://www.rheinpfalz.de/lokal/kreis-germersheim_artikel,-afd-und-rechtsextreme-demonstrieren-gemeinsam-_arid,1086449.html>
+/<https://www.boell-bw.de/de/2020/11/11/die-afd-im-stuttgarter-landtag> 
+
+**Baron, Anton**\
+<https://taz.de/AfD-im-Landtag-von-Baden-Wuerttemberg/!5316877/>
+
+**Eisenhut, Bernhard\
+**
+
+**Gossner, Hans-Juergen**\
+<https://www.kreis-goeppingen-nazifrei.de/wp-content/uploads/2019/05/chronik2018_web.pdf>
+
+**Grimmer, Bernd**\
+<https://taz.de/Das-Personal-der-AfD/!5287428/>
+
+**Goegel, Bernd**\
+<https://www.tagesspiegel.de/politik/rechts-radikal-in-den-landtag-gewaehlt-was-der-verfassungsschutz-ueber-die-afd-abgeordneten-weiss/27007492.html>
+
+**Hellstern, Uwe\
+**
+
+**Hoerner, Hans-Peter\
+**
+
+**Klauss, Miguel**\
+[https://www.stuttgarter-zeitung.de/inhalt.landtagswahl-kandidatenvorstellung-afd-kandidat-will-abschiebekultur.a69e2f5c-6e72-4a12-895b-61ac47ed3b48.html\
+](https://www.stuttgarter-zeitung.de/inhalt.landtagswahl-kandidatenvorstellung-afd-kandidat-will-abschiebekultur.a69e2f5c-6e72-4a12-895b-61ac47ed3b48.html)[https://twitter.com/MiguelKlaussAfD\
+](https://twitter.com/MiguelKlaussAfD)<https://www.facebook.com/watch/?v=854407381939578>
+
+**Klos, Ruediger**\
+[https://www.sueddeutsche.de/politik/landtag-stuttgart-aras-afd-beantragt-sondersitzung-des-landtagspraesidiums-dpa.urn-newsml-dpa-com-20090101-180807-99-456386\
+](https://www.sueddeutsche.de/politik/landtag-stuttgart-aras-afd-beantragt-sondersitzung-des-landtagspraesidiums-dpa.urn-newsml-dpa-com-20090101-180807-99-456386)[https://www.facebook.com/fontagnier/posts/10213706462129820\
+](https://www.facebook.com/fontagnier/posts/10213706462129820)[https://twitter.com/RuedigerKlos\
+](https://twitter.com/RuedigerKlos)<https://www.swp.de/politik/landespolitik/afd-mann-im-zwielicht-31042201.htm>l
+
+**Lindenschmid, Daniel**\
+[https://www.facebook.com/lindenschmid/posts/910718315724179\
+](https://www.facebook.com/lindenschmid/posts/910718315724179)[https://www.adiz.info/wp-content/uploads/2021/02/WK.17.Lindenschmid-Daniel-AfD-Nuertingen.auf\_.Demo\_.fuer\_.alle\_.28.02.16.jpeg\
+](https://www.adiz.info/wp-content/uploads/2021/02/WK.17.Lindenschmid-Daniel-AfD-Nuertingen.auf_.Demo_.fuer_.alle_.28.02.16.jpeg)<https://twitter.com/LindenschmidAfD>
+
+**Podeswa, Rainer**\
+[https://www.stuttgarter-zeitung.de/inhalt.hinweis-auf-hexenhammer-afd-feiert-anti-klimapolitiker-podeswa.f263855e-0fc2-4c16-88b3-c9255b79e4f6.html\
+](https://www.stuttgarter-zeitung.de/inhalt.hinweis-auf-hexenhammer-afd-feiert-anti-klimapolitiker-podeswa.f263855e-0fc2-4c16-88b3-c9255b79e4f6.html)[https://www.facebook.com/Podeswa/posts/474201636110714\
+](https://www.facebook.com/Podeswa/posts/474201636110714)<https://www.gustav-von-struve-stiftung.de/Impressum>
+
+**Rupp, Ruben**\
+
+**Stein, Udo**\
+<https://nazis-in-nadelstreifen.de/2016/06/10/udo-stein-erhaelt-1-ruege-des-neuen-landtages/#more-40><https://www.tagesschau.de/inland/innenpolitik/afd-analyse-bw-101.html>
+
+**Steyer, Joachim**\
+
+**Saenze, Emil**\
+<https://www.tagesspiegel.de/politik/rechts-radikal-in-den-landtag-gewaehlt-was-der-verfassungsschutz-ueber-die-afd-abgeordneten-weiss/27007492.html>
+
+<https://afd-fraktion-bw.de/aktuelles/1205/Emil+S%C3%A4nze%3A+Muhterem+Aras%E2%80%98+fabelhafte+Wunschvorstellung+vom+Grundgesetz+offenbart+exorbitante+Bildungsl%C3%BCcken>
+
+[https://www.tagesschau.de/inland/innenpolitik/afd-analyse-bw-101.html\
+](https://www.tagesschau.de/inland/innenpolitik/afd-analyse-bw-101.html)[https://www.nrwz.de/kreis-rottweil/in-der-afd-fliegen-die-fetzen-saenze-contra-meuthen/259884\
+](https://www.nrwz.de/kreis-rottweil/in-der-afd-fliegen-die-fetzen-saenze-contra-meuthen/259884)[\[https://afd-fraktion-bw.de/aktuelles/3584/Emil+Sänze+MdL%3A+Querdenken+ist+gelebte+Demokratie\](https://afd-fraktion-bw.de/aktuelles/3584/Emil+Sänze+MdL%3A+Querdenken+ist+gelebte+Demokratie)](https://afd-fraktion-bw.de/aktuelles/3584/Emil+S%C3%A4nze+MdL%3A+Querdenken+ist+gelebte+Demokratie)
+
+**Wolle, Carola**\
+[https://www.queer.de/detail.php?article_id=34119\
+](https://www.queer.de/detail.php?article_id=34119)[https://www.carolawolle.de/tag/demo-fuer-alle/\
+](https://www.carolawolle.de/tag/demo-fuer-alle/)[https://de.indymedia.org/sites/default/files/2021/01/kandel-broschuere-online.pdf\
+](https://de.indymedia.org/sites/default/files/2021/01/kandel-broschuere-online.pdf)<https://www.tagesschau.de/inland/innenpolitik/afd-analyse-bw-101.html>
+
+**Weidel, Alice Elisabeth**\
+[https://www.faz.net/aktuell/politik/inland/alice-weidel-provoziert-mit-kopftuchmaedchen-aussage-15593291.html\
+](https://www.faz.net/aktuell/politik/inland/alice-weidel-provoziert-mit-kopftuchmaedchen-aussage-15593291.html)[https://www.goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php\
+](https://www.goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php)[https://www.deutschlandkurier.de/2021/05/alice-weidel-17/\
+](https://www.deutschlandkurier.de/2021/05/alice-weidel-17/)[https://lobbypedia.de/wiki/Friedrich_A.\_von_Hayek\_-\_Gesellschaft\
+](https://lobbypedia.de/wiki/Friedrich_A._von_Hayek_-_Gesellschaft)[https://www.mut-gegen-rechte-gewalt.de/service/lexikon/i/institut-f-r-staatspolitik\
+](https://www.mut-gegen-rechte-gewalt.de/service/lexikon/i/institut-f-r-staatspolitik)<https://katapult-magazin.de/de/artikel/30-bis-66-prozent-rechtsextrem>
+
+**Hess, Martin Alexander**\
+<https://www.zeit.de/politik/deutschland/2017-09/afd-kandidaten-bundestagswahl-abgeordnete>
+
+**Spaniel, Dirk**\
+[https://www.zeit.de/politik/deutschland/2020-01/baden-wuerttemberg-afd-dirk-spaniel-sonderparteitag-gutachten-parteiausschluss\
+](https://www.zeit.de/politik/deutschland/2020-01/baden-wuerttemberg-afd-dirk-spaniel-sonderparteitag-gutachten-parteiausschluss)[http://www.pi-news.net/2020/10/spaniel-corona-massnahmen-erschuettern-wirtschaft-in-grundfesten/\
+](http://www.pi-news.net/2020/10/spaniel-corona-massnahmen-erschuettern-wirtschaft-in-grundfesten/)[https://www.compact-online.de/auch-dem-benziner-droht-das-aus-dirk-spaniel-im-interview-mit-karel-meissner/\
+](https://www.compact-online.de/auch-dem-benziner-droht-das-aus-dirk-spaniel-im-interview-mit-karel-meissner/)<https://www.info-direkt.eu/2021/09/22/der-deutscher-verfassungsschutz-als-regierungsschutz/>
+
+**Frohnmaier, Markus-Cornel**\
+[https://web.archive.org/web/20180706190847/http://www.huffingtonpost.de/2016/05/25/freie-radikale-die-dubiosen-machenschaften-der-afd-jugendorganisation-junge-alternative_n\_10125408.htm](https://web.archive.org/web/20180706190847/http:/www.huffingtonpost.de/2016/05/25/freie-radikale-die-dubiosen-machenschaften-der-afd-jugendorganisation-junge-alternative_n_10125408.html)
+
+<https://youtu.be/6znCu1VMr5Q?t=267>
+
+<https://www.youtube.com/watch?v=_mje-YzFuas>
+
+<https://www.info-direkt.eu/2021/09/12/39-ausgabe-stoppt-die-migration-2015-darf-sich-nicht-wiederholen/>
+
+<https://www.info-direkt.eu/2021/02/14/eine-realitaetsfremde-utopie-euro-islam/><https://www.info-direkt.eu/2020/12/08/augen-auf-bei-islamismus-und-verfassungsschutz/>
+
+<https://www.zeit.de/politik/deutschland/2018-11/junge-alternative-afd-jugend-identitaere-bewegung>
+
+<https://www.tagesspiegel.de/themen/reportage/frohnmaier-trifft-sellner-wie-die-afd-jugend-mit-den-identitaeren-kungelt/19702108.html>
+
+**Jongen, Marc Stephan**\
+[https://www.faz.net/aktuell/politik/inland/marc-jongen-ist-afd-politiker-und-philosoph-14005731.html?printPagedArticle=true#pageIndex_3\
+](https://www.faz.net/aktuell/politik/inland/marc-jongen-ist-afd-politiker-und-philosoph-14005731.html?printPagedArticle=true#pageIndex_3)<https://dserver.bundestag.de/btp/19/19077.pdf>
+(S 8977)\
+<https://staatspolitik.de/chronik-2019/>
+
+**Bernhard, Marc Albert**\
+<https://jungefreiheit.de/debatte/kommentar/2020/klimapolitik-ist-die-toedliche-vorerkrankung-unserer-autoindustrie/>
+
+**Kaufmann, Malte**\
+[https://demofueralle.de/aktionen/demo-21-juni-15/videos-21-juni-15/\
+](https://demofueralle.de/aktionen/demo-21-juni-15/videos-21-juni-15/)<https://m.facebook.com/events/dresdener-burschenschaft-salamandria/vortragsabend-von-der-cdu-zur-afd/2035035046750551/>
+
+**Baum, Christina**
+
+<https://nazis-in-nadelstreifen.de/category/dr-christina-baum/>
+
+<https://www.stuttgarter-zeitung.de/inhalt.christina-baum-afd-politikerinnicht-in-geheimdienstausschuss-gewaehlt.3c330198-7a06-4b88-8941-9c2a559e1441.html>
+
+<https://www.kontextwochenzeitung.de/gesellschaft/498/blaue-stunde-in-buehl-7042.html>
+
+<https://www.queer.de/detail.php?article_id=39207>
+
+<https://m.facebook.com/Dr.Christina.Baum/posts/765583016963665/>
+
+**Seitz, Thomas Michael Konrad**\
+[https://taz.de/Urteil-gegen-AfD-Politiker-Thomas-Seitz/!5783765/\
+](https://taz.de/Urteil-gegen-AfD-Politiker-Thomas-Seitz/!5783765/)<https://www.bundestag.de/webarchiv/abgeordnete/biografien/S/523642-523642>
+
+**Braun, Juergen Friedrich**\
+
+**Lobstedt, Jochen**\
+
+**Koehler, Severin**\
+[https://www.mutgegenrechts.org/2021/04/11/severin-koehler-tritt-als-kandidat-fuer-den-ja-bundesvorstand-an/\
+](https://www.mutgegenrechts.org/2021/04/11/severin-koehler-tritt-als-kandidat-fuer-den-ja-bundesvorstand-an/)[https://www.youtube.com/watch?v=bmUjheInhGE\
+](https://www.youtube.com/watch?v=bmUjheInhGE)<https://www.mutgegenrechts.org/2021/02/18/kritisches-portrait-der-afd-kandidaten-fuer-die-landtagswahl-2021/>
+
+**Allmendinger, Armin**\
+<https://www.kontextwochenzeitung.de/politik/452/rechte-in-der-zweiten-reihe-6356.html>
+[https://www.stuttgarter-zeitung.de/inhalt.aufregung-im-landtag-ein-afd-berater-vom-rechten-rand.f9f16cc4-da85-4912-8e32-81484461b83a.html\
+](https://www.stuttgarter-zeitung.de/inhalt.aufregung-im-landtag-ein-afd-berater-vom-rechten-rand.f9f16cc4-da85-4912-8e32-81484461b83a.html)[https://www.stuttgarter-nachrichten.de/inhalt.schwierige-mitarbeitersuche-die-afd-entpuppt-sich-als-karrierekiller.6a581a01-e223-4944-a731-4511e165e3ba.html\
+https://www.stuttgarter-nachrichten.de/inhalt.schwierige-mitarbeitersuche-die-afd-entpuppt-sich-als-karrierekiller.6a581a01-e223-4944-a731-4511e165e3ba.html](https://www.stuttgarter-nachrichten.de/inhalt.schwierige-mitarbeitersuche-die-afd-entpuppt-sich-als-karrierekiller.6a581a01-e223-4944-a731-4511e165e3ba.html)
+
+**Hilgers, Phillip**\
+<https://www.facebook.com/philipp.hilgers.7>
+
+**Schneller, Milena**\
+<https://tuebingenrechtsaussen.wordpress.com/2020/03/22/neue-ansprechpartnerin-der-jungen-alternative-ist-tuebingerin/>
+
+**Malek, Fabienne**\
+
+**Schultes, Simon**\
+<https://www.tuebingen.de/amtliche_bekanntmachungen/2019-04-06_wahlvorschlaege.pdf>
+
+**Braun, Mike\
+**[https://www.endstation-rechts-bayern.de/2016/10/identitaere-bewegung-ein-netzphaenomen-ist-auf-bayerns-strassen-angekommen/\
+](https://www.endstation-rechts-bayern.de/2016/10/identitaere-bewegung-ein-netzphaenomen-ist-auf-bayerns-strassen-angekommen/)<http://grueninwaldbuettelbrunn.blogsport.eu/2016/11/10/afd-funktionaer-greift-mich-gewalttaetig-an-staatsanwaltschaft-stellt-verfahren-ein/>
+
+**Lind, Adrian**\
+[https://twitter.com/AdrianLind_afd/with_replies?lang=de\
+https://twitter.com/AdrianLind_afd/with_replies?lang=de](https://twitter.com/AdrianLind_afd/with_replies?lang=de)
+
+**Kimmig, Aaron**\
+<https://nitter.domain.glass/schildkroete_7/status/1425197728112447489><https://autonome-antifa.org/?mot2818>\
+[https://nitter.domain.glass/schildkroete_7/status/1425197728112447489\
+](https://nitter.domain.glass/schildkroete_7/status/1425197728112447489)[https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/afd-stellt-trotz-ausschluss-rechtsextremen-abgeordneten-andreas-wild-zu-abgeordnetenhauswahl-auf.html\
+](https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/afd-stellt-trotz-ausschluss-rechtsextremen-abgeordneten-andreas-wild-zu-abgeordnetenhauswahl-auf.html)[https://antira.org/2021/03/14/afd-und-faschisten-im-bosnischen-grenzgebiet-um-bihac/\
+](https://antira.org/2021/03/14/afd-und-faschisten-im-bosnischen-grenzgebiet-um-bihac/)<https://twitter.com/Jf_Kimmig/status/1390939357855551490>
+
+## Datensatz githhub
+
+<https://github.com/hanniglu/sna-proj>
+
+Im Repository liegen neben der Edge- und Nodelist auch das Codebuch, ein
+readme, sowie eine Kopie dieses Markdown-Dokumentes.
+
+## Verzeichnisse
+
+### Abbildungen
+
+### Tabellen
+
+### Abkürzungen
+
+AfD
+
+JA
+
+IB
+
+## Eidesstattliche Versicherung
 
 **Codebuch**
 
@@ -655,74 +1230,3 @@ beste Gefühl.
 **Nodelist**
 
 <https://raw.githubusercontent.com/hanniglu/sna-proj/main/nodes>
-
-Wie erwartet sind die Organisationen die Nodes mit den höchsten
-Degree-Werten.
-
-```{r Dichte des Netzwerks}
-ds <- degree(g)
-ds
-par(mfrow=c(1,1), mar=c(0,0,0,0))
-
-
-shape <-vcount(g)
-shape [V(g)$type == "1"] <- "square"
-shape [V(g)$type == "2"] <- "circle"
-shape [V(g)$type == "3"] <- "rectangle"
-V(g)[V(g)$type == 1]$color <- "red" 
-V(g)[V(g)$type == 2]$color <- "lightblue"
-V(g)[V(g)$type == 3]$color <- "blue"
-plot.igraph(g,vertex.shape=shape,
-    layout=layout.auto,edge.curved=curve_multiple(g),vertex.label=NA,vertex.size=ds, main="Gesamtnetzwerk")
-```
-
-```{r}
-wolle <- make_ego_graph(g, order = 1, nodes = V(g)$name == "Wolle", mode ="all")
-wolle
-
-wolle1<- wolle[[1]]
-
-plot(wolle1, 
-     main="Ego-Netzwerk Carola Wolle, erster Grad",
-     vertex.color="gold",
-     edge.color="grey80",
-     edge.arrow.size=.3,
-     edge.curved=curve_multiple(wolle1),
-     sub="nur direkte Beziehungen des ersten Grads")
-shape <-vcount(wolle1)
-shape [V(wolle1)$type == "1"] <- "square"
-shape [V(wolle1)$type == "2"] <- "circle"
-plot.igraph(wolle1,vertex.size=15,vertex.shape=shape,
-    layout=layout.auto)
-
-V(wolle1)[V(wolle1)$type == 1]$color <- "pink" 
-V(wolle1)[V(wolle1)$type == 2]$color <- "lightblue"
-V(wolle1)[V(wolle1)$type == 2]$shape <- "circle" 
-V(wolle1)[V(wolle1)$type == 1]$shape <- "square"
-
-plot(wolle1, 
-     main="Ego-Netzwerk Carola Wolle, erster Grad",
-     edge.color="grey80",
-     edge.arrow.size=.3,
-     edge.curved=curve_multiple(wolle1),
-     sub="nur direkte Beziehungen des ersten Grads")
-```
-
-```{r}
-ds <- degree(g)
-ds
-
-
-par(mfrow=c(1,2.5), mar=c(0,0,2,1))
-shape <-vcount(g)
-shape [V(g)$type == "1"] <- "square"
-shape [V(g)$type == "2"] <- "circle"
-shape [V(g)$type == "3"] <- "rectangle"
-V(g)[V(g)$type == 1]$color <- "pink" 
-V(g)[V(g)$type == 2]$color <- "lightblue"
-
-plot.igraph(g,vertex.shape=shape,
-    layout=layout.auto,edge.curved=curve_multiple(g),vertex.label=NA,vertex.size=ds, main="Gesamtnetzwerk")
-plot(wolle1, main="Ego-Netzwerk Wolle")
-par(mfrow=c(1,1), mar=c(0,0,1,1))
-```
